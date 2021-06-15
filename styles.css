@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+li, a, button {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #ecf0f1;
+    text-decoration: none;
+}
+header {
+    background-color: #0F1624;
+    position: sticky;
+    z-index: 969;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+}
+.logo{
+    cursor: pointer;
+}
+
+.nav__links{
+    list-style: none;
+    position: sticky;
+    z-index: 969;
+
+}
+.nav__links li {
+    display: inline-block;
+    padding: 0 20px;
+}
+.nav__links li, a{ 
+    transition: all 0.3s ease 0s;
+}
+.nav__links li, a:hover{ 
+    color: #009dff;
+}
+button {
+    padding: 9px 25px;
+    background-color: #009dff;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+button:hover{
+    background-color: #00bdffaa;
+}
+
+.collection__container{
+    /*background-image: url("https://cdn.discordapp.com/attachments/810932922306789406/852955969214480394/Screenshot_25.png");*/
+    background-color: #0F1624;
+    min-height: 1080px;
+}
+.collection__container h1{
+    font-family: 'Segoe UI', Verdana, sans-serif;
+    color: #fff;
+    font-size: 5rem;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    padding-top: 4rem;
+}
+.collection-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding-top: 3rem;
+    padding-bottom: 10rem;
+}
+.grid-item{
+    padding-top: 3rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+.grid-item img:hover{
+    cursor: pointer;
+    max-height: 510px;
+    max-width: 102%;
+    transition: all 0.3s ease 0s;
+    box-shadow: none;
+}
+.thumbnail .thumbnail{
+    transition: all 0.3s ease 0s;
+    max-height: 500px;
+    max-width: 100%;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    box-shadow: 3px 2px 2px 3px rgba(0, 0, 0, 0.2);
+    
+}
+.thumbnail-text{
+    font-family: 'Segoe UI', Verdana, sans-serif;
+    color: #000000; 
+    vertical-align: middle;
+    background-color: #212D45;
+    font-size: 0.8rem;
+    text-align: center;
+    max-width: 100%;
+    min-height: 2rem;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color: #fff;
+    font-size: 2rem;
+}
+
+@media screen and (max-width: 1060px) /* Desktop */ {
+    .collection-wrapper{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        padding-top: 3rem;
+        padding-bottom: 10rem;
+    }
+    .collection__container h1{
+        font-family: 'Segoe UI', Verdana, sans-serif;
+        color: #fff;
+        font-size: 3rem;
+        font-weight: 400;
+        display: flex;
+        justify-content: center;
+        padding-top: 4rem;
+    }
+}
+@media screen and (max-width: 700px) /* Desktop */ {
+    .collection-wrapper{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        padding-top: 3rem;
+        padding-bottom: 10rem;
+    }
+    .collection__container h1{
+        font-family: 'Segoe UI', Verdana, sans-serif;
+        color: #fff;
+        font-size: 2rem;
+        text-align: center;
+        font-weight: 400;
+        display: flex;
+        justify-content: center;
+        padding-top: 4rem;
+    }
+    li, a, button{
+        background: #009dff00;
+        color: #999ea000;
+    }
+    .logo img{
+        width: 128px;
+        height: 256px;
+    }
+    
+}
